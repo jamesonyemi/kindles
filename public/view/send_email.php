@@ -15,17 +15,17 @@
 <div class="row">
 <div class="jumbotron">
  <div class="container">
-<form method="post" enctype="multipart/form-data" action="<?php ?>">
+<form method="post" enctype="multipart/form-data" action="">
    <div class="form-group row">
   <label for="example-text-input" class="col-10 col-form-label">Title</label>
   <div class="col-12">
-    <input class="form-control" type="text" placeholder="Enter Subject of the Message" id="example-text-input" required="yes">
+    <input class="form-control" type="text" placeholder="Enter Subject of the Message"  name="subject" required="yes">
   </div>
 </div>
 <div class="form-group row">
   <label for="example-search-input" class="col-10 col-form-label">Description</label>
   <div class="col-12">
-  <textarea class="form-control" type="text" style="margin-top: 0px; margin-bottom: 0px; height: 384px;" value="" id="example-search-input"></textarea>
+  <textarea class="form-control" type="text" style="margin-top: 0px; margin-bottom: 0px; height: 384px;" value="" id="description" name="description"></textarea>
   </div>
 </div>
 
@@ -42,9 +42,9 @@
 <div class="row">
 <div class="form-group row">
 <label for="example-datetime-local-input" class="col-10 col-form-label">Start Date</label>
-    <div style="margin-left: 14px;" class="row"><input class="form-control col-11"  value="<?=gmdate("d") ?>" id="example-datetime-local-input"></div>
+    <div style="margin-left: 14px;" class="row"><input class="form-control col-11"  value="<?=gmdate("d") ?>" name="date"></div>
 <div class="col-3">
-    <select class="form-control" id="exampleSelect1">
+    <select class="form-control" id="month" name="month">
       <option name="month" value="01">January</option>
       <option name="month" value="02">February</option>
       <option name="month" value="03">March</option>
@@ -58,7 +58,7 @@
       <option name="month" value="11">November</option>
       <option name="month" value="12">December</option>
     </select></div>
-    <div><input class="form-control col col-md-4"  value="<?=gmdate("Y") ?>" id="example-datetime-local-input"></div>
+    <div><input class="form-control col col-md-4"  value="<?=gmdate("Y") ?>"  name="year"></div>
   </div>
 
 </div>
@@ -77,52 +77,52 @@
 <div class="row container" style="font-size: 1em;">
 <div class="form-check form-check-inline col-10">
   <label class="form-check-label">
-    <input class="form-check-input" type="checkbox" id="watchers" value=""><?= "\n".'James Doe' ?>
+    <input class="form-check-input" type="checkbox" name="watchers" value=""><?= "\n".'James Doe' ?>
   </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <label class="form-check-label">
-    <input class="form-check-input" type="checkbox" id="watchers" value=""><?= "\n". 'Steve Way'?>
+    <input class="form-check-input" type="checkbox" name="watchers" value=""><?= "\n". 'Steve Way'?>
   </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <label class="form-check-label">
-    <input class="form-check-input" type="checkbox" id="watchers" value=""><?= "\n".'Jeffrey SWay' ?>
+    <input class="form-check-input" type="checkbox" name="watchers" value=""><?= "\n".'Jeffrey SWay' ?>
   </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <label class="form-check-label">
-    <input class="form-check-input" type="checkbox" id="watchers" value=""><?= "\n". 'Cornified Bonny'?>
+    <input class="form-check-input" type="checkbox" name="watchers" value=""><?= "\n". 'Cornified Bonny'?>
   </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <label class="form-check-label">
-    <input class="form-check-input" type="checkbox" id="watchers" value=""><?= "\n". 'Terry Slay'?>
+    <input class="form-check-input" type="checkbox" name="watchers" value=""><?= "\n". 'Terry Slay'?>
   </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <label class="form-check-label">
-    <input class="form-check-input" type="checkbox" id="watchers" value=""><?= "\n". 'Peter Teddy'?>
+    <input class="form-check-input" type="checkbox" name="watchers" value=""><?= "\n". 'Peter Teddy'?>
   </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <label class="form-check-label">
-    <input class="form-check-input" type="checkbox" id="watchers" value=""><?= "\n". 'Jones Teddy'?>
+    <input class="form-check-input" type="checkbox" name="watchers" value=""><?= "\n". 'Jones Teddy'?>
   </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <label class="form-check-label">
-    <input class="form-check-input" type="checkbox" id="watchers" value=""><?= "\n". 'Henry Bills'?>
+    <input class="form-check-input" type="checkbox" name="watchers" value=""><?= "\n". 'Henry Bills'?>
   </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <label class="form-check-label">
-    <input class="form-check-input" type="checkbox" id="watchers" value=""><?= "\n". 'Toddy Teddy'?>
+    <input class="form-check-input" type="checkbox" name="watchers" value=""><?= "\n". 'Toddy Teddy'?>
   </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <label class="form-check-label">
-    <input class="form-check-input" type="checkbox" id="watchers" value=""><?= "\n". 'Kim Perry'?>
+    <input class="form-check-input" type="checkbox" name="watchers" value=""><?= "\n". 'Kim Perry'?>
   </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <label class="form-check-label">
-    <input class="form-check-input" type="checkbox" id="watchers" value=""><?= "\n". 'Unicorn Hermon'?>
+    <input class="form-check-input" type="checkbox" name="watchers" value=""><?= "\n". 'Unicorn Hermon'?>
   </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <label class="form-check-label">
-    <input class="form-check-input" type="checkbox" id="watchers" value=""><?= "\n". 'Scense Kitty'?>
+    <input class="form-check-input" type="checkbox" name="watchers" value=""><?= "\n". 'Scense Kitty'?>
   </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <label class="form-check-label">
-    <input class="form-check-input" type="checkbox" id="watchers" value=""><?= "\n". 'Apengiwa Yaloma'?>
+    <input class="form-check-input" type="checkbox" name="watchers" value=""><?= "\n". 'Apengiwa Yaloma'?>
   </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <label class="form-check-label">
-    <input class="form-check-input" type="checkbox" id="watchers" value=""><?= "\n". 'Peter Packer'?>
+    <input class="form-check-input" type="checkbox" name="watchers" value=""><?= "\n". 'Peter Packer'?>
   </label>
 </div>
 </div>
 <br>
-<div class="col-10"><button type="submit" value="Cancel" id="Cancel" name="Cancel" class="btn btn-default">Cancel</button>
-    <button type="submit" id="save" name="save" value="Send File" class="btn btn-danger">Save</button></div>
+<div class="col-10"><button type="submit" value="Cancel"  name="Cancel" class="btn btn-default">Cancel</button>
+    <button type="submit"  name="save" value="Send File" class="btn btn-danger">Save</button></div>
     
 </form>
 </div>
