@@ -1,0 +1,11 @@
+Nexmo API:
+ API_KEY= 9d1efb21
+ API_SECRET= 858581517aef8bf6
+
+
+curl -X POST  https://rest.nexmo.com/sms/json \
+-d api_key=9d1efb21 \
+-d api_secret=858581517aef8bf6 \
+-d to=233200116733 \
+-d from="NEXMO" \
+-d text="Hello from Nexmo"
