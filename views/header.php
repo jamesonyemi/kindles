@@ -88,7 +88,8 @@ include BASE_URL.'config.php';
             <ul class="menu-content">
               <li><a href="add_project.php" data-i18n="nav.invoice.invoice_template" class="menu-item"><i class="icon-plus-square"></i><span data-i18n="nav.project.main" class="menu-title">
               </span>New Project</a>
-              </li>
+              </li></ul>
+            </li>
               <!-- <li><a href="gallery-grid.html" data-i18n="nav.gallery_pages.gallery_grid" class="menu-item">Gallery Grid</a>
               </li>
               <li><a href="search-page.html" data-i18n="nav.search_pages.search_page" class="menu-item">Search Page</a>

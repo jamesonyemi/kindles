@@ -1,3 +1,4 @@
+<?php session_destroy(); header("Location: /login/index.php") ?>
 <?php 
 include 'login_header.php';
 // include '../navbar_fixed_top.php'; 
