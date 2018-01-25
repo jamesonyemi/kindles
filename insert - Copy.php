@@ -25,7 +25,15 @@ if (isset($_POST["save"]))
 
 try {
     
+    $stmt = $conn->prepare("INSERT INTO contact_us (title,name,email,message) 
+    VALUES (:title, :name, :email, :message)");
+    $stmt->bindParam(':title', $title);
+    $stmt->bindParam(':name', $name);
+    $stmt->bindParam(':email', $email);
+    $stmt->bindParam(':message',  $message);
 
+if (is_bool($stmt->execute()))
+ {
         $mail->SMTPDebug = 3;                               // Enable verbose debug output
         $user_name = $name;
         $user_email = $email;
@@ -53,7 +61,7 @@ try {
         $mail->Subject = $title;
         $mail->Body    = $message;
         
-   
+   }
    if(!$mail->send()) {
        echo 'Message could not be sent.';
        echo 'Mailer Error: ' . $mail->ErrorInfo;
