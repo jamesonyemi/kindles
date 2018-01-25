@@ -1,3 +1,3 @@
 <?php 
-define('BASE_URL', 'c:/xampp/htdocs/kindle/');
+define('BASE_URL', 'c:/xampp/htdocs/kindle/public/view/');
  
