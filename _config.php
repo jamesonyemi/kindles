@@ -1,3 +1,3 @@
 <?php 
-define('BASE_URL', 'C:/xampp/htdocs/task/');
+define('BASE_URL', 'c:/xampp/htdocs/kindle/');
  

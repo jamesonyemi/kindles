@@ -1,64 +1,23 @@
-</body>
+ <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap -->
+    <script src="../../assets/js/bootstrap.min.js"></script>
+	<!-- Slick slider -->
+    <script type="text/javascript" src="../../assets/js/slick.min.js"></script>
+    <!-- Counter js -->
+    <script type="text/javascript" src="../../assets/js/counter.js"></script>
+    <!-- Ajax contact form  -->
+    <script type="text/javascript" src="../../assets/js/app.js"></script>
+   
+     <!-- sweetalert -->
+	 
+     <script src="node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+     
 
-	<footer class="footer">
-		<div class="container-fluid">
-			<nav class="pull-left">
-				<ul>
-					<!-- <li>
-						<a href="#">
-							Home
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Company
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							Portfolio
-						</a>
-					</li>
-					<li>
-						<a href="#">
-						   Blog
-						</a>
-					</li> -->
-				</ul>
-			</nav>
-			<p class="copyright pull-right">
-				&copy; <script>document.write(new Date().getFullYear())</script> <a href="#">Front-End by Creative Tim</a>
-			</p>
-		</div>
-	</footer>
-
-	<!--   Core JS Files   -->
-	<script src="../../assets/js/jquery-3.1.0.min.js" type="text/javascript"></script>
-	<script src="../../assets/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="../../assets/js/material.min.js" type="text/javascript"></script>
-
-	<!--  Charts Plugin -->
-	<script src="../../assets/js/chartist.min.js"></script>
-
-	<!--  Notifications Plugin    -->
-	<script src="../../assets/js/bootstrap-notify.js"></script>
-
-	<!--  Google Maps Plugin    -->
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsKimp8ZPoEMqO_qPrIm7xxhHSPlb2xAw"></script>
-
-	<!-- Material Dashboard javascript methods -->
-	<script src="../../assets/js/material-dashboard.js"></script>
-
-	<!-- Material Dashboard DEMO methods, don't include it in your project! -->
-	<script src="../../assets/js/demo.js"></script>
-
-	<script type="text/javascript">
-    	$(document).ready(function(){
-
-			// Javascript method's body can be found in assets/js/demos.js
-        	demo.initDashboardPageCharts();
-
-    	});
-	</script>
+    <!-- Custom js -->
+	<script type="text/javascript" src="../../assets/js/custom.js"></script>
 	
+    
+  </body>
 </html>

@@ -1,71 +1,82 @@
 <?php 
+
 include '../../_config.php'; 
 include BASE_URL.'public/config.php'; 
-require BASE_URL.'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
+require '../../vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
+$mail = new PHPMailer;
     //check if the required fileds have been filled
-if (empty($_POST['description']) || empty($_POST['subject']) || empty($_POST['email'] )) {
+if ( empty($_POST['name']) || empty($_POST['email'] || empty($_POST['message']) )) 
+ {    
+    print_r("Incomplete Data Entry.....");
+     exit;
+ } 
 
-     print_r("Incomplete Data Entry.....");
-     
- } else{
+ else
+ {
 
-if (isset($_POST["save"])) {
+if (isset($_POST["save"])) 
+{
     
-    $subject = $_POST["subject"];
-    $description = $_POST["description"];
+    $title = $_POST["title"];
+    $name = $_POST["name"];
     $email = $_POST["email"];
+    $message = $_POST["message"];
+    // $created_at = $_POST["created_at"];
 
 try {
     
-    $stmt = $conn->prepare("INSERT INTO guests (firstname, lastname, email) 
-    VALUES (:firstname, :lastname, :email)");
-    $stmt->bindParam(':firstname', $subject);
-    $stmt->bindParam(':lastname',  $description);
+    $stmt = $conn->prepare("INSERT INTO contact_us (title,name,email,message) 
+    VALUES (:title, :name, :email, :message)");
+    $stmt->bindParam(':title', $title);
+    $stmt->bindParam(':name', $name);
     $stmt->bindParam(':email', $email);
-if (is_bool($stmt->execute())) {
-    echo "New records created successfully" ."<br />"; 	
-        //$mail->SMTPDebug = 3;                               // Enable verbose debug output
-        $mail = new PHPMailer;
-        $user_name = $email;
+    $stmt->bindParam(':message',  $message);
+
+if (is_bool($stmt->execute()))
+ {
+        $mail->SMTPDebug = 3;                               // Enable verbose debug output
+        $user_name = $name;
         $user_email = $email;
+        $title = $title;
         $mail->isSMTP();                                      // Set mailer to use SMTP
         $mail->Host = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
+        $mail->Host = 'tls://smtp.gmail.com:587';
+        $mail->SMTPOptions = array(
+           'ssl' => array(
+             'verify_peer' => false,
+             'verify_peer_name' => false,
+             'allow_self_signed' => true
+            )
+        );
         $mail->SMTPAuth = true;                               // Enable SMTP authentication
         $mail->Username = 'developergh21@gmail.com';          // SMTP username
         $mail->Password = 'Developer@123##';                  // SMTP password
         $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
         $mail->Port = 587;                                    // TCP port to connect to
         $mail->isHTML(true);                                  // Set email format to HTML
- if (array_key_exists('userfile', $_FILES)) {
-    // First handle the upload
-    // Don't trust provided filename - same goes for MIME types
-    // See http://php.net/manual/en/features.file-upload.php#114004 for more thorough upload validation
-   for ($ct = 0; $ct < count($_FILES['userfile']['tmp_name']); $ct++) {
-        $uploadfile = tempnam(sys_get_temp_dir(), sha1($_FILES['userfile']['name'][$ct]));
-        $filename = $_FILES['userfile']['name'][$ct];
-        if (move_uploaded_file($_FILES['userfile']['tmp_name'][$ct], $uploadfile)) {
 
-         $mail->setFrom('developergh21@gmail.com', 'support@gmail.com');
+        // $mail->setFrom('Lynz Catering Service');
         $mail->addAddress($user_email, $user_name);     
-        $mail->addReplyTo('developergh21@gmail.com', 'Developer');
-        // $mail->addCC('jamesonyemi@gmail.com');
-        // $mail->addBCC('bcc@example.com');
-        $mail->Subject = $subject;
-        $mail->Body = $description;
-        $mail->addAttachment($uploadfile, $filename);
-        } else {
-            $msg .= 'Failed to move file to ' . $uploadfile;
-        }
-     }
+        $mail->addReplyTo($email);
+        $mail->Subject = $title;
+        $mail->Body    = $message;
+        
    }
-}
+   if(!$mail->send()) {
+       echo 'Message could not be sent.';
+       echo 'Mailer Error: ' . $mail->ErrorInfo;
+   } else {
+       echo '<div style="color:#3668C3;"><span>Message has been sent</span></div>';
+   }
+
+    header("Location:index.php");
 
      } catch (Exception $e) {
      	
      	print_r("Error" . $e->getMessage());
      }
    	
-   } else{print_r("Failed Processing Data");}
+   } 
+   else{print_r("Failed Processing Data");}
  
  }
-
