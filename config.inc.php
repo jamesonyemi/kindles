@@ -16,14 +16,19 @@ catch(PDOException $e)
     echo "Error: " . $e->getMessage();
     }
 
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "kindle";
 
-    // $dbopts = parse_url(getenv($servername));
-    // $app->register(new Herrera\Pdo\PdoServiceProvider(),
-    //                array(
-    //                    'pdo.dsn' => 'pgsql:dbname='.ltrim($dbopts["path"],'/').';host='.$dbopts["host"] . ';port=' . $dbopts["port"],
-    //                    'pdo.username' => $dbopts["user"],
-    //                    'pdo.password' => $dbopts["pass"]
-    //                )
-    // );
+// try {
+//     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+//     // set the PDO error mode to exception
+//     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+//    }
+// catch(PDOException $e)
+//     {
+//     echo "Error: " . $e->getMessage();
+//     }
 
 ?>

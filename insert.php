@@ -1,4 +1,5 @@
 <?php 
+
 // include 'config.php'; 
 require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 $mail = new PHPMailer;
