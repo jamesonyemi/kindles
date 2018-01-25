@@ -119,7 +119,7 @@ if (array_key_exists('userfile', $_FILES)) {
     <label for="example-datetime-local-input"  class="col-10 col-form-label">File Attachment</label>
     <div class="col-10">
      <input type="hidden" name="MAX_FILE_SIZE" value="100000"> 
-     <input name="userfile" type="file"> 
+     <input name="userfile" type="file" multiple="multiple"> 
     </div>
     </div>
 <label for="example-datetime-local-input"  class="col-10 col-form-label">Watchers</label>

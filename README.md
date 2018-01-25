@@ -1,2 +1,0 @@
-# kindle
-simple catering website
