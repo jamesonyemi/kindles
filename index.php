@@ -1,1 +1,2 @@
-<?php include_once 'kindle/public/view/index.html' ?>
+<?php 
+include_once 'index.html';
