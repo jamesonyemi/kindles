@@ -1,6 +1,6 @@
 <?php 
-include '../../_config.php'; 
-include BASE_URL.'public/config.php';  
+include '_config.php'; 
+include 'config.php';  
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,14 +15,14 @@ include BASE_URL.'public/config.php';
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <!-- Bootstrap -->
-    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Slick slider -->
-    <link href="../../assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
     <!-- Theme color -->
-    <link id="switcher" href="../../assets/css/theme-color/default-theme.css" rel="stylesheet">
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
 
     <!-- Main Style -->
-    <link href="../../style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.min.css">
