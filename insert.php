@@ -1,7 +1,5 @@
 <?php 
-
-include '_config.php'; 
-include 'config.php'; 
+// include 'config.php'; 
 require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 $mail = new PHPMailer;
     //check if the required fileds have been filled
