@@ -1,1 +1,1 @@
-<?php include_once BASE_URL.'index.html';; ?>
+<?php include_once BASE_URL.'index.html' ?>
