@@ -7,8 +7,7 @@ $mail = new PHPMailer;
     //check if the required fileds have been filled
 if ( empty($_POST['name']) || empty($_POST['email'] || empty($_POST['message']) )) 
  {    
-    print_r("Incomplete Data Entry.....");
-     exit;
+   header("Location:index.php");
  } 
 
  else
@@ -34,7 +33,7 @@ try {
 
 if (is_bool($stmt->execute()))
  {
-        $mail->SMTPDebug = 3;                               // Enable verbose debug output
+        // $mail->SMTPDebug = 3;                               // Enable verbose debug output
         $user_name = $name;
         $user_email = $email;
         $title = $title;
@@ -66,10 +65,12 @@ if (is_bool($stmt->execute()))
        echo 'Message could not be sent.';
        echo 'Mailer Error: ' . $mail->ErrorInfo;
    } else {
-       echo '<div style="color:#3668C3;"><span>Message has been sent</span></div>';
+
+       echo '<div style="text-align: center; font-size: 2rem; color:#ff871c"><span><h1>Thanks, we will get back to you</h1></span></div>';
+       // exit;
+       header("refresh:10");
    }
 
-    header("Location:index.php");
 
      } catch (Exception $e) {
      	

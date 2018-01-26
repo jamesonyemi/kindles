@@ -23,9 +23,7 @@ include 'config.php';
 
     <!-- Main Style -->
     <link href="style.css" rel="stylesheet">
-
-    <!-- Fonts -->
-    <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.min.css">
+    
     <!-- Open Sans for body font -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
     <!-- Lato for Title -->

@@ -462,7 +462,7 @@
 												<li> Lorem ipsum dolor sit amet. </li>
 											</ul>
 
-											<div class="mu-pricing-single-footer">
+											<div class="mu-pricing-single-footer" style="text-align: center; font-size: large;">
 												<a href="#" class="mu-order-btn">Order Now!</a>
 											</div>
 											
@@ -547,18 +547,23 @@
 							<div class="mu-contact-content">
 
 								<div id="form-messages"></div>
-								<form id="ajax-contact" method="post" action="mailer.php" class="mu-contact-form">
-									<div class="form-group">                
-										<input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
-									</div>
-									<div class="form-group">                
-										<input type="email" class="form-control" placeholder="Enter Email" id="email" name="email" required>
-									</div>              
-									<div class="form-group">
-										<textarea class="form-control" placeholder="Message" id="message" name="message" required></textarea>
-									</div>
-									<button type="submit" class="mu-send-msg-btn"><span>SUBMIT</span></button>
-						        </form>
+								<form method="post" action="insert.php" class="mu-contact-form">
+												<div class="form-group"> 
+												<div class="form-group">                
+													<input type="text" class="form-control" placeholder="Subject of Your Message" id="title" name="title" required>
+												</div>               
+													<input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
+												</div>
+
+												<div class="form-group">                
+													<input type="email" class="form-control" placeholder="Enter Email" id="email" name="email" required>
+												</div>  
+												
+												<div class="form-group">
+													<textarea class="form-control" placeholder="Message" id="message" name="message" required></textarea>
+												</div>
+												<button type="submit" class="mu-send-msg-btn" name="save"><span>SEND</span></button>
+									        </form>
 
 							</div>
 							<!-- End Contact Content -->
