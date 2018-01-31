@@ -530,7 +530,8 @@ button:focus {
 
 
 #mu-video-review {
-	background-image: url(assets/images/video-review-bg.jpeg);
+	/*background-image: url(assets/images/lynz.png);*/
+	background-image: url(http://food.fnr.sndimg.com/content/dam/images/food/fullset/2017/11/15/0/HE_Holiday-Table-Spread.s4x3.jpg.rend.hgtvcom.1280.960.suffix/1510773076063.jpeg);
 	background-attachment: fixed;
 	background-size: cover;
 	display: inline;
@@ -758,7 +759,7 @@ button:focus {
 /*--------------------*/
 
 #mu-testimonials {
-	background-image: url("assets/images/ruby.jpg");
+	background-image: url("assets/images/client.jpg");
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;

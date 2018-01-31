@@ -14,7 +14,7 @@
 							      </button>
 
 							      <!-- Text Logo -->
-							      <a class="navbar-brand" href="index.html"><i class="fa fa-book" aria-hidden="true"></i> Kindle</a>
+							      <a class="navbar-brand" href="index.php"><i class="fa fa-cutlery" aria-hidden="true"></i><?= "\n" ?>Lynz</a>
 
 							      <!-- Image Logo -->
 							      <!-- <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"></a> -->
@@ -25,12 +25,12 @@
 							    <!-- Collect the nav links, forms, and other content for toggling -->
 							    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							      	<ul class="nav navbar-nav mu-menu navbar-right">
-								        <li><a href="#">HOME</a></li>
-								        <li><a href="#mu-book-overview">OVERVIEW</a></li>
-								        <li><a href="#mu-author">AUTHOR</a></li>
-							            <li><a href="#mu-pricing">PRICE</a></li>
-							            <li><a href="#mu-testimonials">TESTIMONIALS</a></li>
-							            <li><a href="#mu-contact">CONTACT</a></li>
+								        <li><a href="#"><?= strtoupper('Home') ?></a></li>
+								        <li><a href="#mu-book-overview"><?= strtoupper('Our Team') ?></a></li>
+								        <li><a href="#mu-author"><?= strtoupper('Author') ?></a></li>
+							            <li><a href="#mu-pricing"><?= strtoupper('Price') ?></a></li>
+							            <li><a href="#mu-testimonials"><?= strtoupper('Testimonials') ?></a></li>
+							            <li><a href="#mu-contact"><?= strtoupper('Contact') ?></a></li>
 							      	</ul>
 							    </div><!-- /.navbar-collapse -->
 						  	</div><!-- /.container-fluid -->
@@ -45,24 +45,27 @@
 					<div class="container">
 						<div class="row">
 
-							<div class="col-md-6 col-sm-6 col-sm-push-6">
+							<div class="col-md-6 col-sm-6 col-sm-push-7">
 								<div class="mu-hero-right">
-									<img src="assets/images/ebook.png" alt="Ebook img">
+									<img src="http://walnuthillcollege.edu/wp-content/uploads/2016/01/testimonial-one.png" alt="Ebook img">
 								</div>
 							</div>
-
 							<div class="col-md-6 col-sm-6 col-sm-pull-6">
 								<div class="mu-hero-left">
-									<h1>Perfect Landing Page Template to Present Your eBook</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam saepe, recusandae quidem nulla! Eveniet explicabo perferendis aut, ab quos omnis labore laboriosam quisquam hic deserunt ipsum maxime aspernatur velit impedit.</p>
-									<a href="#" class="mu-primary-btn">Download Now!</a>
-									<span>*Avaliable in PDF, ePUB, Mobi & Kindle.</span>
+									<h1>Lynz Catering Services</h1>
+									<p>The chef Tunde Wey is based in New Orleans, but he was born in Nigeria, where jollof rice is a well-loved dish. The rice is cooked in a flavorful tomato and pepper purée; his version is vegan, and laced with chile heat.</p>
+									<span>
+										<a href="#" class="mu-primary-btn">Evelyn Quaye
+									(CEO)
+								    </a></span>
 								</div>
 							</div>	
 
 						</div>
 					</div>
 				</section>
+
+
 				
 				<!-- Start Featured Slider -->
 				
@@ -139,7 +142,7 @@
 									<div class="mu-book-overview-area">
 
 										<div class="mu-heading-area">
-											<h2 class="mu-heading-title">Book Overview</h2>
+											<h2 class="mu-heading-title"><?= strtoupper('Our Team') ?></h2>
 											<span class="mu-header-dot"></span>
 											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
 										</div>
@@ -255,8 +258,6 @@
 					</section>
 					<!-- End Book Overview -->
 
-					
-
 					<!-- Start Video Review -->
 					<section id="mu-video-review">
 						<div class="container">
@@ -300,12 +301,12 @@
 											<div class="row">
 												<div class="col-md-6">
 													<div class="mu-author-image">
-														<img src="assets/images/author.jpg" alt="Author Image">
+														<img src="assets/images/author.png" alt="Author Image">
 													</div>
 												</div>
 												<div class="col-md-6">
 													<div class="mu-author-info">
-														<h3>John Doe</h3>
+														<h3>Evelyn Quaye</h3>
 														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo suscipit facilis ipsum ullam reiciendis odio error iste neque ratione libero rem accusamus voluptatibus, nihil unde maiores sunt nisi. Assumenda, consectetur.</p>
 
 														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, dolorem error neque! Dolores similique ut iusto odit esse ipsam, nesciunt pariatur animi minima maiores mollitia cupiditate ad ipsum deleniti perspiciatis!</p>
@@ -448,7 +449,7 @@
 								<div class="col-md-12">
 									<div class="mu-testimonials-area">
 										<div class="mu-heading-area">
-											<h2 class="mu-heading-title">What Our Readers Says</h2>
+											<h2 class="mu-heading-title">What Our Clients Says</h2>
 											<span class="mu-header-dot"></span>
 										</div>
 
@@ -535,7 +536,6 @@
 
 					<!-- Start Google Map -->
 					<section id="mu-google-map">
-						<!-- <iframe src="https://www.google.com/maps/dir/5.6483929,-0.2407444/Folk+St,+Taifa,+Ghana/@5.647946,-0.2428004,17z/am=t/data=!4m8!4m7!1m0!1m5!1m1!1s0xfdf9eb5aa5a6f4b:0x5d058445daf5f3c5!2m2!1d-0.2408731!2d5.6484784?hl=en-US" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe> -->
 						<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d3970.449318737336!2d-0.24280038567519363!3d5.647946034289344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d5.6483929!2d-0.2407444!4m5!1s0xfdf9eb5aa5a6f4b%3A0x5d058445daf5f3c5!2sFolk+St%2C+Taifa%2C+Ghana!3m2!1d5.6484784!2d-0.24087309999999998!5e0!3m2!1sen!2sbd!4v1516803551300" width="100%" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</section>
 					<!-- End Google Map -->

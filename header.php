@@ -9,7 +9,7 @@ include 'config.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Kindle : Home</title>
+    <title>Lynz Catering : Home</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
     <!-- Font Awesome -->
@@ -18,6 +18,7 @@ include 'config.php';
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Slick slider -->
     <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/sweet-alert.css" rel="stylesheet">
     <!-- Theme color -->
     <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
 

@@ -1,6 +1,6 @@
 <?php 
 
-include '_config.php'; 
+// include '_config.php'; 
 include 'config.php'; 
 require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 $mail = new PHPMailer;
@@ -66,9 +66,15 @@ if (is_bool($stmt->execute()))
        echo 'Mailer Error: ' . $mail->ErrorInfo;
    } else {
 
-       echo '<div style="text-align: center; font-size: 2rem; color:#ff871c"><span><h1>Thanks, we will get back to you</h1></span></div>';
-       // exit;
-       header("refresh:10");
+       // echo '<div style="text-align: center; font-size: 2rem; color:#ff871c"><span><h1>Thanks, we will get back to you</h1></span></div>';
+     $redirect = header("Location:index.php");
+
+   if (is_bool($redirect)) {
+     echo '<script>
+      swal("Good job!", "You clicked the button!", "success")
+    </script>';
+    } 
+
    }
 
 
@@ -81,3 +87,4 @@ if (is_bool($stmt->execute()))
    else{print_r("Failed Processing Data");}
  
  }
+ ?>
