@@ -1,4 +1,13 @@
 <?php include 'header.php'; ?>
+<?php 
+ function read_more($name ,$value = [])
+ {
+ 
+	$r = $name . "-" . implode(" ",$value);
+	 print_r($r); 
+ }
+// return read_more('read_more',[2]);
+ ?>
 			<!-- Start Header -->
 				<header id="mu-header" class="" role="banner">
 					<div class="container">
@@ -53,7 +62,11 @@
 							<div class="col-md-6 col-sm-6 col-sm-pull-6">
 								<div class="mu-hero-left">
 									<h1>Lynz Catering Services</h1>
-									<p>The chef Tunde Wey is based in New Orleans, but he was born in Nigeria, where jollof rice is a well-loved dish. The rice is cooked in a flavorful tomato and pepper purée; his version is vegan, and laced with chile heat.</p>
+									<p>Have you ever envisioned yourself as a glamorous executive chef who goes to “Iron Chef” and cooks everybody else’s bum to another planet? You are not the only one.
+
+Becoming a chef can be a good career move only if you have the right personality, and it is definitely not as glorious as it seems on TV.
+
+Working under constant pressure to deliver the food fast without sacrificing quality throughout the process, standing on your feet for long hours, enduring cuts and burns, heavy lifting, noise, heat, smokes and fumes, working on evenings, weekends and holidays and almost anytime when the rest of the world is not working are just a few of the things you must go through as a chef.</p>
 									<span>
 										<a href="#" class="mu-primary-btn">Evelyn Quaye
 									(CEO)
@@ -155,10 +168,47 @@
 												<div class="col-md-3 col-sm-6">
 													<div class="mu-book-overview-single">
 														<span class="mu-book-overview-icon-box">
-															<i class="fa fa-area-chart" aria-hidden="true"></i>
+															<i aria-hidden="true"><img src="assets/images/chef.jpg" alt="Author Signature"></i>
 														</span>
 														<h4>Chapter One</h4>
-														<p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
+
+														<input type="checkbox" class="read-more-state" id="<?php read_more('more',[1]) ?>" />
+														<div class="read-more-wrap">
+														  <div class="read-more-target">
+														  	<p >He made headlines last month when the New York Times Magazine profiled him and put McGarry on the cover of its annual food issue. He happens to work professionally as a chef, but that's not the first thing you notice when talking to him. McGarry has a level of composure and poise that people twice his age don't possess. And, for someone who could easily be debilitated by his own delusion and the yes-men around him, he's incredibly self-aware. Between all that and the perfectly coiffed hair, you immediately understand why people are fascinated with McGarry and trip over themselves to give him opportunities.</p></div>
+														</div>
+														<label for="<?php read_more('more',[1]) ?>" class="read-more-trigger mu-order-btn"></label>
+													</div>
+												</div>
+
+												<div class="col-md-3 col-sm-6">
+													<div class="mu-book-overview-single">
+														<span class="mu-book-overview-icon-box">
+															<i aria-hidden="true"><img src="assets/images/chef.jpg" alt="Author Signature"></i>
+														</span>
+														<h4>Chapter One</h4>
+														<!-- <p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p> -->
+														<input type="checkbox" class="read-more-state" id="<?php read_more('more',[2]) ?>" />
+														<div class="read-more-wrap">
+														  <div class="read-more-target">
+														  	<p >He made headlines last month when the New York Times Magazine profiled him and put McGarry on the cover of its annual food issue. He happens to work professionally as a chef, but that's not the first thing you notice when talking to him. McGarry has a level of composure and poise that people twice his age don't possess. And, for someone who could easily be debilitated by his own delusion and the yes-men around him, he's incredibly self-aware. Between all that and the perfectly coiffed hair, you immediately understand why people are fascinated with McGarry and trip over themselves to give him opportunities.</p></div>
+														</div>
+														<label for="<?php read_more('more',[2]) ?>" class="read-more-trigger mu-order-btn"></label>
+													</div>
+												</div>
+
+												<div class="col-md-3 col-sm-6">
+													<div class="mu-book-overview-single">
+														<span class="mu-book-overview-icon-box">
+															<i aria-hidden="true"><img src="assets/images/chef.jpg" alt="Author Signature"></i>
+														</span>
+														<h4>Chapter One</h4>
+														<input type="checkbox" class="read-more-state" id="<?php read_more('more',[3]) ?>" />
+														<div class="read-more-wrap">
+														  <div class="read-more-target">
+														  	<p >He made headlines last month when the New York Times Magazine profiled him and put McGarry on the cover of its annual food issue. He happens to work professionally as a chef, but that's not the first thing you notice when talking to him. McGarry has a level of composure and poise that people twice his age don't possess. And, for someone who could easily be debilitated by his own delusion and the yes-men around him, he's incredibly self-aware. Between all that and the perfectly coiffed hair, you immediately understand why people are fascinated with McGarry and trip over themselves to give him opportunities.</p></div>
+														</div>
+														<label for="<?php read_more('more',[3]) ?>" class="read-more-trigger mu-order-btn"></label>
 													</div>
 												</div>
 												<!-- / Book Overview Single Content -->
@@ -167,85 +217,84 @@
 												<div class="col-md-3 col-sm-6">
 													<div class="mu-book-overview-single">
 														<span class="mu-book-overview-icon-box">
-															<i class="fa fa-cubes" aria-hidden="true"></i>
+															<i aria-hidden="true"><img src="assets/images/black-chef3.jpg" alt="Author Signature"></i>
 														</span>
 														<h4>Chapter Two</h4>
-														<p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
+														<input type="checkbox" class="read-more-state" id="<?php read_more('more',[4]) ?>" />
+														<div class="read-more-wrap">
+														  <div class="read-more-target">
+														  	<p >He made headlines last month when the New York Times Magazine profiled him and put McGarry on the cover of its annual food issue. He happens to work professionally as a chef, but that's not the first thing you notice when talking to him. McGarry has a level of composure and poise that people twice his age don't possess. And, for someone who could easily be debilitated by his own delusion and the yes-men around him, he's incredibly self-aware. Between all that and the perfectly coiffed hair, you immediately understand why people are fascinated with McGarry and trip over themselves to give him opportunities.</p></div>
+														</div>
+														<label for="<?php read_more('more',[4]) ?>" class="read-more-trigger mu-order-btn"></label>
 													</div>
 												</div>
-												<!-- / Book Overview Single Content -->
-
+												
 												<!-- About Us Single Content -->
 												<div class="col-md-3 col-sm-6">
 													<div class="mu-book-overview-single">
 														<span class="mu-book-overview-icon-box">
-															<i class="fa fa-modx" aria-hidden="true"></i>
-														</span>
-														<h4>Chapter Three</h4>
-														<p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
-													</div>
-												</div>
-												<!-- / Book Overview Single Content -->
-
-												<!-- About Us Single Content -->
-												<div class="col-md-3 col-sm-6">
-													<div class="mu-book-overview-single">
-														<span class="mu-book-overview-icon-box">
-															<i class="fa fa-files-o" aria-hidden="true"></i>
+															<i aria-hidden="true">
+																<img src="assets/images/chef.jpg" alt="Author Signature">
+															</i>
 														</span>
 														<h4>Chapter Four</h4>
-														<p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
+														<input type="checkbox" class="read-more-state" id="<?php read_more('more',[6]) ?>" />
+														<div class="read-more-wrap">
+														  <div class="read-more-target">
+														  	<p >He made headlines last month when the New York Times Magazine profiled him and put McGarry on the cover of its annual food issue. He happens to work professionally as a chef, but that's not the first thing you notice when talking to him. McGarry has a level of composure and poise that people twice his age don't possess. And, for someone who could easily be debilitated by his own delusion and the yes-men around him, he's incredibly self-aware. Between all that and the perfectly coiffed hair, you immediately understand why people are fascinated with McGarry and trip over themselves to give him opportunities.</p></div>
+														</div>
+														<label for="<?php read_more('more',[6]) ?>" class="read-more-trigger mu-order-btn"></label>
 													</div>
 												</div>
-												<!-- / Book Overview Single Content -->
 
-												<!-- Book Overview Single Content -->
 												<div class="col-md-3 col-sm-6">
 													<div class="mu-book-overview-single">
 														<span class="mu-book-overview-icon-box">
-															<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+															<i aria-hidden="true">
+																<img src="assets/images/chef.jpg" alt="Author Signature">
+															</i>
 														</span>
-														<h4>Chapter Five</h4>
-														<p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
+														<h4>Chapter Four</h4>
+														<input type="checkbox" class="read-more-state" id="<?php read_more('more',[7]) ?>" />
+														<div class="read-more-wrap">
+														  <div class="read-more-target">
+														  	<p >He made headlines last month when the New York Times Magazine profiled him and put McGarry on the cover of its annual food issue. He happens to work professionally as a chef, but that's not the first thing you notice when talking to him. McGarry has a level of composure and poise that people twice his age don't possess. And, for someone who could easily be debilitated by his own delusion and the yes-men around him, he's incredibly self-aware. Between all that and the perfectly coiffed hair, you immediately understand why people are fascinated with McGarry and trip over themselves to give him opportunities.</p></div>
+														</div>
+														<label for="<?php read_more('more',[7]) ?>" class="read-more-trigger mu-order-btn"></label>
 													</div>
 												</div>
-												<!-- / Book Overview Single Content -->
 
-												<!-- About Us Single Content -->
 												<div class="col-md-3 col-sm-6">
 													<div class="mu-book-overview-single">
 														<span class="mu-book-overview-icon-box">
-															<i class="fa fa-language" aria-hidden="true"></i>
+															<i aria-hidden="true">
+																<img src="assets/images/chef.jpg" alt="Chef Six">
+															</i>
 														</span>
-														<h4>Chapter Six</h4>
-														<p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
+														<h4>Chapter Four</h4>
+														<input type="checkbox" class="read-more-state" id="<?php read_more('more',[8]) ?>" />
+														<div class="read-more-wrap">
+														  <div class="read-more-target">
+														  	<p >He made headlines last month when the New York Times Magazine profiled him and put McGarry on the cover of its annual food issue. He happens to work professionally as a chef, but that's not the first thing you notice when talking to him. McGarry has a level of composure and poise that people twice his age don't possess. And, for someone who could easily be debilitated by his own delusion and the yes-men around him, he's incredibly self-aware. Between all that and the perfectly coiffed hair, you immediately understand why people are fascinated with McGarry and trip over themselves to give him opportunities.</p></div>
+														</div>
+														<label for="<?php read_more('more',[8]) ?>" class="read-more-trigger mu-order-btn"></label>
 													</div>
 												</div>
-												<!-- / Book Overview Single Content -->
 
-												<!-- About Us Single Content -->
 												<div class="col-md-3 col-sm-6">
 													<div class="mu-book-overview-single">
 														<span class="mu-book-overview-icon-box">
-															<i class="fa fa-gg" aria-hidden="true"></i>
+															<i aria-hidden="true"><img src="assets/images/black-chef3.jpg" alt="Author Signature"></i>
 														</span>
-														<h4>Chapter Seven</h4>
-														<p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
+														<h4>Chapter Three</h4>
+														<input type="checkbox" class="read-more-state" id="<?php read_more('more',[5]) ?>" />
+														<div class="read-more-wrap">
+														  <div class="read-more-target">
+														  	<p >He made headlines last month when the New York Times Magazine profiled him and put McGarry on the cover of its annual food issue. He happens to work professionally as a chef, but that's not the first thing you notice when talking to him. McGarry has a level of composure and poise that people twice his age don't possess. And, for someone who could easily be debilitated by his own delusion and the yes-men around him, he's incredibly self-aware. Between all that and the perfectly coiffed hair, you immediately understand why people are fascinated with McGarry and trip over themselves to give him opportunities.</p></div>
+														</div>
+														<label for="<?php read_more('more',[5]) ?>" class="read-more-trigger mu-order-btn"></label>
 													</div>
 												</div>
-												<!-- / Book Overview Single Content -->
-
-												<!-- About Us Single Content -->
-												<div class="col-md-3 col-sm-6">
-													<div class="mu-book-overview-single">
-														<span class="mu-book-overview-icon-box">
-															<i class="fa fa-wpforms" aria-hidden="true"></i>
-														</span>
-														<h4>Chapter Eight</h4>
-														<p>Lorem ipsum dolor sit amet, consect adipis elit minim veniam ettis inkeras.</p>
-													</div>
-												</div>
-												<!-- / Book Overview Single Content -->
 
 											</div>
 										</div>
@@ -301,7 +350,7 @@
 											<div class="row">
 												<div class="col-md-6">
 													<div class="mu-author-image">
-														<img src="assets/images/author.png" alt="Author Image">
+														<img src="assets/images/chef.jpg" alt="Author Image">
 													</div>
 												</div>
 												<div class="col-md-6">
@@ -310,7 +359,7 @@
 														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo suscipit facilis ipsum ullam reiciendis odio error iste neque ratione libero rem accusamus voluptatibus, nihil unde maiores sunt nisi. Assumenda, consectetur.</p>
 
 														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, dolorem error neque! Dolores similique ut iusto odit esse ipsam, nesciunt pariatur animi minima maiores mollitia cupiditate ad ipsum deleniti perspiciatis!</p>
-														<img class="mu-author-sign" src="assets/images/author-signature.png" alt="Author Signature">
+				
 														<div></div>
 														<div class="mu-social-media">
 															<a href="#"><i class="fa fa-facebook"></i></a>
