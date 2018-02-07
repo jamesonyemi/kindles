@@ -555,7 +555,7 @@ Working under constant pressure to deliver the food fast without sacrificing qua
 										<div class="mu-contact-content">
 
 											<div id="form-messages"></div>
-											<form method="post" action="insert.php" class="mu-contact-form">
+											<form method="post" action="<?= 'insert.php'?>" class="mu-contact-form">
 												<div class="form-group"> 
 												<div class="form-group">                
 													<input type="text" class="form-control" placeholder="Subject of Your Message" id="title" name="title" required>
