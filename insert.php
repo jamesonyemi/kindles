@@ -18,9 +18,9 @@ if (isset($_POST["save"]))
     $name = $_POST["name"];
     $email = $_POST["email"];
     $message = $_POST["message"];
-    // $created_at = $_POST["created_at"];
-
-try {
+    
+try 
+{
     
     $stmt = $conn->prepare("INSERT INTO contact_us (title,name,email,message) 
     VALUES (:title, :name, :email, :message)");
@@ -59,25 +59,39 @@ if (is_bool($stmt->execute()))
         $mail->Body    = $message;
         
    }
-   if(!$mail->send()) {
+
+   if(!$mail->send()) 
+   {
        echo 'Message could not be sent.';
        echo 'Mailer Error: ' . $mail->ErrorInfo;
-   } else {
-
-       echo '<div style="text-align: center; font-size: 2rem; color:#b30f47; margin-top:20%;"><span><h1>Thanks, we will get back to you</h1></span></div>';
-       // header("Location:index.php; Refresh:10");
-       header("Refresh: 10; url=index.php");
-
    }
 
+    else 
+    {
 
-     } catch (Exception $e) {
-     	
+       header("Location: message/html/welcome.php");
+       // header("Refresh: 10; url=../message/html/welcome.php");
+
+    }
+
+
+     } 
+
+     catch (Exception $e) 
+     {
+
      	print_r("Error" . $e->getMessage());
+
      }
    	
    } 
-   else{print_r("Failed Processing Data");}
+
+   else
+   {
+
+    print_r("Failed Processing Data");
+
+   }
  
  }
  ?>

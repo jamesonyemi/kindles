@@ -37,7 +37,6 @@ include 'config.php';
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Slick slider -->
     <link href="assets/css/slick.css" rel="stylesheet">
-    <link href="assets/css/sweet-alert.css" rel="stylesheet">
     <!-- Theme color -->
     <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
 

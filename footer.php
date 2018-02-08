@@ -5,7 +5,6 @@
     <script src="assets/js/bootstrap.min.js"></script>
 	<!-- Slick slider -->
     <script type="text/javascript" src="assets/js/slick.min.js"></script>
-    <script type="text/javascript" src="assets/js/sweet-alert.js"></script>
     <!-- Counter js -->
     <script type="text/javascript" src="assets/js/counter.js"></script>
     <!-- Ajax contact form  -->
