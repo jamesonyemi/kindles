@@ -35,7 +35,7 @@
                 <h3 class="text-uppercase">For Choosing Us !</h3>
                 <p class="text-muted m-t-30 m-b-30 text-uppercase">We believe all our customers are royals</p>
                 <a href="../../index.php" class="btn btn-danger btn-rounded btn-lg waves-effect waves-light m-b-40">Back to home</a> </div>
-                <?php header("Refresh:10") ?>
+                <?php header("Refresh:10.5") ?>
         </div>
     </section>
     <!-- jQuery -->
